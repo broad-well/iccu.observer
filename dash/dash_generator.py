@@ -67,7 +67,14 @@ def compact_params(my2025: bool):
     [ # "[VCMS] EVSE Target Voltage":
       13035347, "EVSE-V_target", 0, 1000
     ]
-  ]
+  ] + ([] if my2025 else [
+    [ # "[ICCU] OBC Temperature A":
+      13035390, "OBC-TEMP_A", -40, 100
+    ],
+    [ # "[ICCU] OBC Temperature B":
+      13035391, "OBC-TEMP_B", -40, 100
+    ]
+  ])
 
 def build_item(compact_param, x, y, width, height):
   return {
@@ -250,20 +257,20 @@ def build_signature(my, y, width):
   }
 
 def build_dash(params, my: str):
-  container_width = 600
+  container_width = 300
   dash = {"ItemsCount": 0, "Items": [], "Title": "iccu.observer", "DashboardType": 8, "UpdateInBackground": True}
-  ys = [0] * 3 + [110] * 4 + [220] * 4 + [320] * 4 + [430] * 2 + [540] * 5
-  rows = [3, 4, 4, 4, 2, 5]
+  ys = [0] * 3 + [70] * 4 + [140] * 4 + [200] * 4 + [270] * 2 + [340] * 5 + [410] * 2
+  rows = [3, 4, 4, 4, 2, 5, 2]
   row_i, row_j = 0, 0
   for i, compact in enumerate(params):
     y = ys[i]
     x = row_j / rows[row_i] * container_width
-    dash["Items"].append(build_item(compact, x, y, container_width / rows[row_i], 100))
+    dash["Items"].append(build_item(compact, x, 120 + y, container_width / rows[row_i], 60))
     row_j += 1
     if row_j == rows[row_i]:
       row_i += 1
       row_j = 0
-  dash["Items"].append(build_signature(my, 650, container_width))
+  dash["Items"].append(build_signature(my, 50, container_width))
   return dash
 
 
