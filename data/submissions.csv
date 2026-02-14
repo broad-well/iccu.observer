@@ -1,4 +1,9 @@
 SHA1 of VIN,Vehicle model,Model year,Driving mode used,12V battery type,ICCU part number,ICCU manufacture date,DTCs encountered during trip,Annotations,CSV files
+d1de8cd25d6acd920f195b815ed92bfa39be3975,Kia EV6,2022,,FLA,364011XFB0,2022-01-21,,Sports mode activated at times.,2026-02-13-15-12-08.csv
+d1de8cd25d6acd920f195b815ed92bfa39be3975,Kia EV6,2022,,FLA,364011XFB0,2022-01-21,,Sports mode activated at times.,2026-02-13-15-40-51.csv
+d1de8cd25d6acd920f195b815ed92bfa39be3975,Kia EV6,2022,,FLA,364011XFB0,2022-01-21,,Sports mode activated at times.,2026-02-14-10-31-36.csv
+d1de8cd25d6acd920f195b815ed92bfa39be3975,Kia EV6,2022,,FLA,364011XFB0,2022-01-21,,Sports mode activated at times.,2026-02-14-13-09-17.csv
+d1de8cd25d6acd920f195b815ed92bfa39be3975,Kia EV6,2022,,FLA,364011XFB0,2022-01-21,,Sports mode activated at times.,2026-02-14-12-13-17.csv
 764b372eef5613c79a7b3c46b1a4b086ecb59f50,Kia EV6,2025,Eco,AGM,36401-1XFD5,2025-05-07,,,2026-02-11-20-54-30.csv
 764b372eef5613c79a7b3c46b1a4b086ecb59f50,Kia EV6,2025,Eco,AGM,36401-1XFD5,2025-05-07,,,2026-02-11-22-10-24.csv
 764b372eef5613c79a7b3c46b1a4b086ecb59f50,Kia EV6,2025,Eco,AGM,36401-1XFD5,2025-05-07,,,2026-02-11-23-42-43.csv
