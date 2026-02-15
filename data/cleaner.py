@@ -62,7 +62,9 @@ speeds = [
 ]
 for speed in speeds:
     standardize_unit(df_notimedelta, speed, {"mph": lambda s: s * 1.609}, "km/h")
+
 standardize_unit(df_notimedelta, "Distance travelled", {"miles": lambda s: s * 1.609}, "km")
+standardize_unit(df_notimedelta, "HV EV Battery Power", {"hp": lambda s: s / 1.341}, "kW")
 
 df_notimedelta['12V device load (A)'] = df_notimedelta['[ICCU] LDC Output Current (A)'] - df_notimedelta['[ICCU] Aux. Battery Current (A)']
 
