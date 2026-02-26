@@ -1,4 +1,7 @@
 SHA1 of VIN,Vehicle model,Model year,Driving mode used,12V battery type,ICCU part number,ICCU manufacture date,DTCs encountered during trip,Headlight setting,Annotations,CSV files
+764b372eef5613c79a7b3c46b1a4b086ecb59f50,Kia EV6,2025,Normal,AGM,36401-1XFD5,2025-05-07,,Low beam,,2026-02-24-22-02-23.csv
+764b372eef5613c79a7b3c46b1a4b086ecb59f50,Kia EV6,2025,Normal,AGM,36401-1XFD5,2025-05-07,,Low beam,Right after DC fast charging. Check coolant / inlet temperatures,2026-02-23-22-48-35.csv
+764b372eef5613c79a7b3c46b1a4b086ecb59f50,Kia EV6,2025,Normal,AGM,36401-1XFD5,2025-05-07,,Low beam,,2026-02-23-21-53-56.csv
 764b372eef5613c79a7b3c46b1a4b086ecb59f50,Kia EV6,2025,Normal,AGM,36401-1XFD5,2025-05-07,,Low beam,,2026-02-19-15-40-49.csv
 764b372eef5613c79a7b3c46b1a4b086ecb59f50,Kia EV6,2025,Normal,AGM,36401-1XFD5,2025-05-07,,Low beam,,2026-02-19-18-29-10.csv
 764b372eef5613c79a7b3c46b1a4b086ecb59f50,Kia EV6,2025,Normal,AGM,36401-1XFD5,2025-05-07,,Low beam,,2026-02-16-20-53-23.csv
