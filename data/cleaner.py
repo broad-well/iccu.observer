@@ -28,6 +28,11 @@ for i, row in subs.iterrows():
 for input_file in input_files:
     df = pd.read_csv(input_file)
     df['time'] = pd.TimedeltaIndex(df['time'])
+    if df['time'].iloc[-1] < df['time'].iloc[0]:
+        # overnight edge case
+        times = pd.Series(df['time'])
+        times[times < times.iloc[0]] += pd.Timedelta('24 hours')
+        df['time'] = times
 
     df_resampled = df.ffill(limit=20).set_index('time')\
         .resample('s').ffill(limit=20)\
