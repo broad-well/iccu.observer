@@ -2,77 +2,77 @@
 def compact_params(my2025: bool):
   return [
     [ # "[BMS] Coolant temperature 2":
-      13035180, "COOLANT-TEMP2", -40, 80
+      16040360, "COOLANT-TEMP2", -40, 80
     ],
     [ # "[BMS] Operating Time":
-      13035248, "TOTAL OPTIME", 0, 100000
+      16040382, "TOTAL OPTIME", 0, 100000
     ],
     [ # "[BMS] State of Charge BMS":
-      13035250, "SOC", 0, 100
+      16040385, "SOC", 0, 100
     ],
     [ # "[HVAC] Coolant temperature 1":
-      13035264, "COOLANT-TEMP1", -40, 100
+      16040067, "COOLANT-TEMP1", -40, 100
     ],
     [ # "[HVAC] Humidity sensor for automatic defogger":
-      13035284, "HUMIDITY", 0, 100
+      16040069, "HUMIDITY", 0, 100
     ],
     [ # "[HVAC] Indoor Temperature":
-      13035188, "INDOOR-TEMP", -40, 100
+      16040070, "INDOOR-TEMP", -40, 100
     ],
     [ # "[HVAC] Outdoor Temperature":
-      13035187, "OUTDOOR-TEMP", -40, 100
+      16040077, "OUTDOOR-TEMP", -40, 100
     ],
     [ # "[ICCU] Aux. Battery Current":
-      13035418 if my2025 else 13035386, "12V-CURRENT", -100, 100
+      16040388 if my2025 else 16040396, "12V-CURRENT", -100, 100
     ],
     [ # "[ICCU] Aux. Battery State of Charge":
-      13035419 if my2025 else 13035387, "12V-SOC", 0, 100
+      16040389 if my2025 else 16040397, "12V-SOC", 0, 100
     ],
     [ # "[ICCU] Aux. Battery Temperature":
-      13035420 if my2025 else 13035389, "12V-TEMP", -40, 100
+      16040390 if my2025 else 16040398, "12V-TEMP", -40, 100
     ],
     [ # "[ICCU] Aux. Battery Voltage":
-      13035421 if my2025 else 13035388, "12V-VOLTAGE", 0, 20
+      16040391 if my2025 else 16040399, "12V-VOLTAGE", 0, 20
     ],
     [ # "[ICCU] LDC Input Voltage":
-      13035422 if my2025 else 13035382, "LDC-V_in", 0, 2000
+      16040392 if my2025 else 16040400, "LDC-V_in", 0, 2000
     ],
     [ # "[ICCU] LDC Output Voltage":
-      13035424 if my2025 else 13035383, "LDC-V_out", 0, 20
+      16040394 if my2025 else 16040402, "LDC-V_out", 0, 20
     ],
     [ # "[ICCU] LDC Output Current":
-      13035423 if my2025 else 13035384, "LDC-I_out", 0, 400
+      16040393 if my2025 else 16040401, "LDC-I_out", 0, 400
     ],
     [ # "[ICCU] LDC Temperature":
-      13035425 if my2025 else 13035385, "LDC-TEMP", -40, 100
+      16040395 if my2025 else 14040403, "LDC-TEMP", -40, 100
     ],
     [ # "[PS] Absolute wheels turn angle":
-      13035286, "WHEEL-ANGLE", -360, 360
+      16040085, "WHEEL-ANGLE", -360, 360
     ],
     [ # "[VCS] Vehicle speed (high res.)":
-      13035350, "SPEED", 0, 300
+      16040096, "SPEED", 0, 300
     ],
     [ # "[VCMS] Charging socket connected":
-      13035311, "CHARGING", 0, 1
+      16040022, "CHARGING", 0, 1
     ],
     [ # "[VCMS] EVSE Output Current":
-      13035334, "EVSE-I_out", 0, 500
+      16040043, "EVSE-I_out", 0, 500
     ],
     [ # "[VCMS] EVSE Output Voltage":
-      13035333, "EVSE-V_out", 0, 1000
+      16040044, "EVSE-V_out", 0, 1000
     ],
     [ # "[VCMS] EVSE Target Current":
-      13035346, "EVSE-I_target", 0, 500
+      16040045, "EVSE-I_target", 0, 500
     ],
     [ # "[VCMS] EVSE Target Voltage":
-      13035347, "EVSE-V_target", 0, 1000
+      16040046, "EVSE-V_target", 0, 1000
     ]
   ] + ([] if my2025 else [
     [ # "[ICCU] OBC Temperature A":
-      13035390, "OBC-TEMP_A", -40, 100
+      16040418, "OBC-TEMP_A", -40, 100
     ],
     [ # "[ICCU] OBC Temperature B":
-      13035391, "OBC-TEMP_B", -40, 100
+      16040419, "OBC-TEMP_B", -40, 100
     ]
   ])
 
